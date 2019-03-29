@@ -1,8 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>{{ $route.params.id }}</h2>
-    <h2>{{ $route.params.usename }}</h2>
+    <router-view class="view one" name="b"></router-view>
+    <router-view class="view two" name="a"></router-view>
   </div>
 </template>
 
