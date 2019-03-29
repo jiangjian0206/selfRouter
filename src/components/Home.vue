@@ -4,6 +4,8 @@
         <h2>{{$route.params.id}}</h2>
         <router-link to=""></router-link>
         <router-view>   </router-view>
+        <router-view class="view one" name="b"></router-view>
+        <router-view class="view two" name="a"></router-view>
     </div>
 </template>
 <script>
