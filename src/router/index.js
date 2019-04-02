@@ -8,11 +8,21 @@ import Homeson1 from '../components/Homeson1.vue'
 import Homeson2 from '../components/Homeson2.vue'
 import nameview2 from '../components/nameview2.vue'
 import nameview1 from '../components/nameview.vue'
+import checklist from '../components/checklist.vue'
+import basic from '../components/basic.vue'
 
 Vue.use(router)
 
 export default new router({
     routes:[
+        {
+            path:'/',
+            redirect:'/basic'
+        },
+        {
+            path:'/basic',
+            component:basic
+        },
         {
             path:'/home/:id',
             name:'home',
@@ -31,6 +41,10 @@ export default new router({
         {
             path:'/city/:usename/post/:id',
             component:City
+        },
+        {
+            path:'/demo',
+            component:checklist
         },
         {
             path: '/view',
